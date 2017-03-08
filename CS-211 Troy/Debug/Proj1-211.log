@@ -1,0 +1,7 @@
+﻿  proj1.c
+proj1.c(75): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+proj1.c(112): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+  Proj1-211.vcxproj -> C:\Users\Jacob Waller\Documents\School Stuff\Spring 2017\CS-211 Troy\Debug\Proj1-211.exe
+  Proj1-211.vcxproj -> C:\Users\Jacob Waller\Documents\School Stuff\Spring 2017\CS-211 Troy\Debug\Proj1-211.pdb (Full PDB)
