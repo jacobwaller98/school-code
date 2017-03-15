@@ -1,0 +1,44 @@
+p
+{
+	font-size: 25px;
+	display: inline;
+}
+
+a
+{
+	font-size: 25px;
+	display: inline;
+}
+
+/* Make the specified element invisible.
+ */
+.invisible
+{
+	display: none;
+}
+
+/* Properties for error text used on the web-pages.
+ */
+.error-text
+{
+	color: red;
+}
+
+/* Configurations for the border used on the main page.
+ */
+.border-config
+{
+	border-collapse: collapse;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Right alignment configurations.
+ */
+.right-align
+{
+	float: right;
+}

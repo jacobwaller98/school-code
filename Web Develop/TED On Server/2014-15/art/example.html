@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="libary/font-awesome-4.1.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/slideshow.css">
+		<link rel="stylesheet" type="text/css" href="example.css">
+	<title>jQueryGallery plugin demo</title>
+</head>
+	<body style="background:black;">
+		<h1 style="color:white;" id="info">&nbsp;</h1>
+		<div id="container">
+			<div id="slideshow">
+				<!-- Below are the images in the gallery -->
+			    <div id="aa" data-img-id="1" class="img-wrapper" style="background-image: url('images/sineWave.gif')"></div>
+			    <div id="ab" data-img-id="2" class="img-wrapper" style="background-image: url('images/fractalHeight.png')"></div>
+			    <div id="ac" data-img-id="3" class="img-wrapper" style="background-image: url('images/Animated Blobs.gif')"></div>
+			    <div id="ad" data-img-id="4" class="img-wrapper" style="background-image: url('images/bouncingBalls.gif')"></div>
+			    <div id="ae" data-img-id="5" class="img-wrapper" style="background-image: url('images/triforce.gif')"></div>
+			    <div id="af" data-img-id="6" class="img-wrapper" style="background-image: url('images/Lighthouse.gif')"></div>
+			    <div id="ag" data-img-id="7" class="img-wrapper" style="background-image: url('images/tetrahedronSpiral.bmp')"></div>
+			    <div id="ah" data-img-id="8" class="img-wrapper" style="background-image: url('images/rubix.gif')"></div>
+			    <div id="ai" data-img-id="9" class="img-wrapper" style="background-image: url('images/sphere.png')"></div>
+			    <div id="aj" data-img-id="10" class="img-wrapper" style="background-image: url('images/Cobra.png')"></div>
+			    <div id="ak" data-img-id="11" class="img-wrapper" style="background-image: url('images/symmetric insulators.png')"></div>
+			    <div id="al" data-img-id="12" class="img-wrapper" style="background-image: url('images/polyhedra.png')"></div>
+			    <div id="am" data-img-id="13" class="img-wrapper" style="background-image: url('images/marblebox.png')"></div>
+			    <div id="an" data-img-id="14" class="img-wrapper" style="background-image: url('images/Mirror.png')"></div>
+			    <div id="ao" data-img-id="15" class="img-wrapper" style="background-image: url('images/diamond.jpg')"></div>
+
+				<!-- Below are the thumbnails of above images -->
+			    <div class="thumbs-container bottom">
+			    	<div id="prev-btn" class="prev">
+			    		<i class="fa fa-chevron-left fa-3x"></i>
+			    	</div>
+
+					<ul class="thumbs">
+						<li id="ba" onclick="changeInfo('a')"  data-thumb-id="1" class="thumb" style="background-image: url('images/sineSmall.png')"></li>
+						<li id="bb" onclick="changeInfo('b')"  data-thumb-id="2" class="thumb" style="background-image: url('images/fractalHeightSmall.png')"></li>
+						<li id="bc" onclick="changeInfo('c')"  data-thumb-id="3" class="thumb" style="background-image: url('images/animatedBlobsSmall.png')"></li>
+						<li id="bd" onclick="changeInfo('d')"  data-thumb-id="4" class="thumb" style="background-image: url('images/bouncingBallsSmall.gif')"></li>
+						<li id="be" onclick="changeInfo('e')"  data-thumb-id="5" class="thumb" style="background-image: url('images/triForceSmall.gif')"></li>
+						<li id="bf" onclick="changeInfo('f')"  data-thumb-id="6" class="thumb" style="background-image: url('images/rotatingLightHouseSmall.gif')"></li>
+						<li id="bg" onclick="changeInfo('g')"  data-thumb-id="7" class="thumb" style="background-image: url('images/tetrahedronSpiralSmall.gif')"></li>
+						<li id="bh" onclick="changeInfo('h')"  data-thumb-id="8" class="thumb" style="background-image: url('images/rubix_small.gif')"></li>
+						<li id="bi" onclick="changeInfo('i')"  data-thumb-id="9" class="thumb" style="background-image: url('images/sphere_small.png')"></li>
+						<li id="bj" onclick="changeInfo('j')"  data-thumb-id="10" class="thumb" style="background-image: url('images/Cobra-small.png')"></li>
+						<li id="bk" onclick="changeInfo('k')" data-thumb-id="11" class="thumb" style="background-image: url('images/symmetric insulators-small.png')"></li>
+						<li id="bl" onclick="changeInfo('l')" data-thumb-id="12" class="thumb" style="background-image: url('images/polyhedra small.png')"></li>
+						<li id="bm" onclick="changeInfo('m')" data-thumb-id="13" class="thumb" style="background-image: url('images/marblebox-small.png')"></li>
+						<li id="bn" onclick="changeInfo('n')" data-thumb-id="14" class="thumb" style="background-image: url('images/MirrorSmall.png')"></li>
+						<li id="bo" onclick="changeInfo('o')" data-thumb-id="15" class="thumb" style="background-image: url('images/diamond-small.jpg')"></li>
+					</ul>
+
+			    	<div id="next-btn" class="next">
+			    		<i class="fa fa-chevron-right fa-3x"></i>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+
+		<script src="js/jquery-2.1.4.min.js"></script>
+
+		<script>
+			function changeInfo(title){
+				if(title == "a")
+					document.getElementById("info").innerHTML = "3D Sine Wave - Dale A. 2015";
+				else if(title == "b")
+					document.getElementById("info").innerHTML = "Fractal Height - Chase W. 2015";
+				else if(title == "c")
+					document.getElementById("info").innerHTML = "Animated Blobs - Devin M. 2015";
+				else if(title == "d")
+					document.getElementById("info").innerHTML = "Bouncing Balls - Brady O. 2013";
+				else if(title == "e")
+					document.getElementById("info").innerHTML = "Triforce - Zach S. 2011";
+				else if(title == "f")
+					document.getElementById("info").innerHTML = "Rotating Lighthouse - Dakota H. 2011";
+				else if(title == "g")
+					document.getElementById("info").innerHTML = "Tetrahedron Spiral - German R. 2010";
+				else if(title == "h")
+					document.getElementById("info").innerHTML = "Rubik's Animation - Kyle W. 2009";
+				else if(title == "i")
+					document.getElementById("info").innerHTML = "Play Spheres - Brad H. 2006";
+				else if(title == "j")
+					document.getElementById("info").innerHTML = "Cobra - David O. 2005";
+				else if(title == "k")
+					document.getElementById("info").innerHTML = "Symmetric Insulators - David O. 2005";
+				else if(title == "l")
+					document.getElementById("info").innerHTML = "9 Polyhedra - David O. 2005";
+				else if(title == "m")
+					document.getElementById("info").innerHTML = "Marble Box - David O. 2005";
+				else if(title == "n")
+					document.getElementById("info").innerHTML = "Cylinder Mirrors - David O. 2005";
+				else if(title == "o")
+					document.getElementById("info").innerHTML = "Diamonds - David O. 2005";
+			}
+
+			temp = window.parent.image;
+			changeInfo(temp)
+			id1 = "a"+temp;
+			id2 = "b"+temp;
+			$("#"+id1).removeClass("img-wrapper");
+			$("#"+id1).addClass("img-wrapper active");
+			$("#"+id2).removeClass("thumb");
+			$("#"+id2).addClass("thumb active");
+		</script>
+
+		<!-- Including Scripts -->
+		<script src="js/gallery.js"></script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = "js/ga.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+        </script>
+	</body>
+</html>

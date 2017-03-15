@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+
+	<body>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				var h = $( window ).height() - 75;
+				$('.slider').slider({
+						full_width: false,
+						interval:5000,
+						transition:800,
+						height:h,
+						indicators: false,
+						});
+			});
+		</script>
+		<div class="navbar-fixed">
+		  	<nav>
+				<div class="nav-wrapper grey darken-4">
+					<a href="#" class="brand-logo">Construction Services</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a  href="#">Contact Us</a></li> 
+						<li><a  href="#">Services</a></li>
+						<li><a  href="#">Pricing</a></li>
+						<li><a  href="#">About Us</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
+		<div class="slider fullscreen">
+			<ul class="slides">
+				<li>
+					<img src="media/images/porch.jpg"> <!-- random image -->
+					<div class="caption center-align">
+						<h3 style="background:rgba(0,0,0, 0.33);" >Construction Services</h3>
+						<h4 style="background:rgba(0,0,0, 0.33);" >Roofing | Siding | External Construction</h4>
+					</div>
+				</li>
+				<li>
+					<img src="media/images/download.jpg"> <!-- random image -->
+					<div class="caption center-align">
+						<h3 style="background:rgba(0,0,0, 0.33);" >Construction Services</h3>
+						<h4 style="background:rgba(0,0,0, 0.33);" >Roofing | Siding | External Construction</h4>
+					</div>
+				</li>
+				<li>
+					<img src="media/images/roof1.jpg"> <!-- random image -->
+					<div class="caption center-align">
+						<h3 style="background:rgba(0,0,0, 0.33);" >Construction Services</h3>
+						<h4 style="background:rgba(0,0,0, 0.33);" >Roofing | Siding | External Construction</h4>
+					</div>
+				</li>
+				<li>
+					<img src="media/images/siding.jpg"> <!-- random image -->
+					<div class="caption center-align">
+						<h3 style="background:rgba(0,0,0, 0.33);" >Construction Services</h3>
+						<h4 style="background:rgba(0,0,0, 0.33);" >Roofing | Siding | External Construction</h4>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<!--
+		<ul style="width: 250px;" id="slide-out" class="nav-bar blue-grey darken-3 fixed center">
+		
+			<a class="white waves-effect waves-black btn-large"><i class="material-icons right">phone</i>Contact Us</a>
+			<a class="white waves-effect waves-black btn-large"><i class="material-icons right">info</i>About Us</a>
+			<a class="white waves-effect waves-black btn-large"><i class="material-icons right">cloud</i>Services</a>
+			<a class="white waves-effect waves-black btn-large"><i class="material-icons right">cloud</i>Pricing</a>
+		
+		
+		</ul>-->
+
+	</body>
+</html>

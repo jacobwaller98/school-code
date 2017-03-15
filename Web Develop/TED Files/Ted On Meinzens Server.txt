@@ -1,0 +1,125 @@
+
+<!--
+ * File:		index.html
+ * Author:		Braden Steffaniak 
+ * Date:		Oct 8 2013
+ * Modified:    JMeinzen Feb, 2015
+ * Description:	This is the main page form the Interactive Display Board
+ * 		Project for EHS. This page determines how the main page will
+ * 		be displayed. 
+-->
+<!doctype html> <!-- Use the html5 doctype as well as the english language -->
+<html lang="en">
+	<head>
+		<!-- Use the UTF 8-bit encoding for the characters displayed within the page. -->
+		<meta charset="utf-8">
+		
+		<!-- The title for the main page of the web-site. -->
+		<title>EHS Tiger Electronic Display</title>
+		
+		<!-- Reference all of the cascading style sheets (.css) used within the page. -->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<!-- Reference all of the Javascript files (.js) used within the page. -->
+	<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>	
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+	 <!--Import Google Icon Font-->
+     	 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     	 <!--Import materialize.css-->
+     	 <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     	 <!--Let browser know website is optimized for mobile-->
+     	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
+	 </head>
+	
+	<!-- The content of the main page. -->
+	<body id="index">
+	<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+		<!-- Divider that holds all of the page's content. Surround it with a border -->
+
+	   <div id="page-panel" class="border-config">
+			<!-- Set up the navigation panel that holds important links for the web page. -->
+		 <div id="nav-panel" class="border-config visible">
+				<!-- Set up the links within the navigation panel. -->
+		  <div id="nav-panel-content">
+			  <hr>
+              <!-- TED information -->
+              <div>
+                <h1>Tiger Electronic Display</h1>
+		  </ul>
+
+              </div>
+              <hr>
+              <!-- NOTE: DO NOT PUT IN ANY DIV OR OTHER TAG...messes with javascript IFrame -->
+
+		<ul id="dropdown2" class="dropdown-content">
+		<br>
+             <li> <a class="content-panel-link badge btn" href="Projects10-15/aboutMe/aboutMe.html">About Me</a><br><br>
+	       </li> <br>
+	      <li><a class="content-panel-link nav-link btn" href="Projects10-15/fruitNinja/fruitNinja.html">Fruit Ninja - Jacob Waller Jacob Harris</a><br><br>
+                </li><br>
+              <li><a class="content-panel-link nav-link btn" href="http://www.ecusd7.org/">District 7</a><br><br>   	    
+		</li><br>
+              <li><a class="content-panel-link nav-link btn" href="http://www.ecusd7.org/ehs">Edwardsville High School</a><br><br>
+		</li><br>
+              <li><a class="content-panel-link nav-link btn" href="http://www.ecusd7.org/homepages/ehsstaff/mathDepartment/">EHS Math Department</a><br><br>       	    
+		</li><br>
+              <li><a class="content-panel-link nav-link btn" href="http://www.ecusd7.org/homepages/ehsstaff/jmeinzen/projects/student/TED/WebContent/resources/assembleTED.html">TED Assembly Images</a><br><br>            
+		</li><br>
+              <li><a class="content-panel-link nav-link btn" href="Projects10-15/googleMaps/GoogleMapsTest.html">Google Maps - J. Waller 3Feb15</a><br><br>         
+		</li><br>
+              <li><a class="content-panel-link nav-link btn" href="Projects10-15/ticTacToe/NewTicTacToe.html">Tic Tac Toe - C. Fuesting 10Feb15</a><br> <br>
+		</li><br>
+              <li><a class="content-panel-link nav-link btn" href="Projects10-15/gravity/gravity.html">Gravity - D. Peterson 7May15</a>  <br>  <br>   
+	         </li></ul>
+		 <a class="btn dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                                  
+   	      <hr> 
+              <!-- student recognition -->
+              <div>
+                <h4>Hardware Designers:</h4>
+                	<ul>
+                	<li>Austin Fahsl, 2012</li>
+                	<li>Marshall Gevers, 2012</li>
+                	</ul>
+                <h4>Hardware Assembly Team: </h4>
+               		<ul>
+                  	<li>Kayleigh Meinzen, 2014</li>
+                  	<li>German Rivera, 2014</li>
+                  	<li>Max Spicer, 2014</li>
+                  	<li>Braden Steffaniak, 2013</li>
+                	</ul>
+                <h4>Software & Server Architect</h4>
+                	<ul>
+			<li>Zach Anderson, 2014-15</li>
+                	<li>Braden Steffaniak, 2013-14</li>
+               		</ul>
+              </div>
+              <hr>
+              <!-- Funding recognition -->
+              <div>
+                <h5>TED has been funded by a generous grant from Emerson Electric as part of their Emerson Gold Star Program.</h5>
+                <h5> If you have any questions or comments, please direct them to Mr. John Meinzen, faculty advisor, who can be reached at the EHS main office. </h5>
+              </div> <!-- Funding recognition -->
+		  </div> <!-- id="nav-panel-content"-->
+	    </div><!-- id="nav-panel"-->
+			
+		<!-- Set up the panel that will hold the main content on the page. -->
+		<div id="page-content" class="border-config">
+            <iframe id="page-content-iframe" src="http://www.ecusd7.org/ehs/" sandbox="allow-scripts"  seamless>
+                    <!-- If IFrames are not supported, then display a message saying so. -->
+                  <p>Your browser does not support iFrames.</p>
+            </iframe>            
+				<!-- Set up the error message element in case it is ever used. -->
+			<p id="page-content-error"></p>
+			<!-- Set up the IFrame used to display the main content. -->
+        </div>   <!-- id="page-content" -->
+      </div>  <!-- id="page-panel" -->
+	</body>
+</html>

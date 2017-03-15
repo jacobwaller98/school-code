@@ -1,0 +1,163 @@
+/* Set the default html page's dimensions to 100%.
+ */
+html
+{
+	width:  100%;
+	height: 100%;
+}
+
+/* Set the index.html's dimensions to 100%, and color to Tiger orange.
+ */
+body#index
+{
+	width:  100%;
+	height: 100%;
+	
+	color: #e6e6e6;
+	
+	/*background-image: url('/images/stripedBackground.png');
+	background-repeat: repeat;*/
+}
+
+/* Configurations for the links in the navigation panel.
+ */
+a.nav-link
+{
+	font-size:  16px;
+	position:   relative;
+	
+	/*color: #EE5700; */
+	color: #003c8f;
+}
+
+/* The configurations for the navigation panel button that shrinks
+ * and grows the panel.
+ */
+img#nav-panel-button
+{
+	position: fixed;
+	
+	left:   10px;
+	top:    10px;
+	
+	opacity: 0;
+	
+	z-index: 1000;
+}
+
+/* The configurations for the panel inside the main page.
+ */
+#page-panel
+{
+	border: 0px solid black;
+	
+	width:  100%;
+	height: 100%;
+	
+	position: relative;
+	float: left;
+	
+	overflow: hidden;
+}
+
+/* The configurations for the navigation panel that contains the
+ * links used to navigate throughout the web-site.
+ */
+#nav-panel
+{
+	border-right: 3px solid black;
+	padding: 5px;
+	
+	position: relative;
+	float:    center;
+	
+	width:  300px;
+	height: 100%;
+	
+	vertical-align: top;
+	
+	overflow: hidden;
+	
+	background-color: #4f4f4f;
+}
+
+/* The configurations for the timeline panel that contains the
+ * timeline itself.
+ */
+#page-content
+{
+	position: relative;
+	
+	height: 100%;
+	
+	overflow: hidden;
+	
+	vertical-align: top;
+	
+	background-color: #F5F5F5;
+}
+
+/* The configurations for the iframe that displays the main content.
+ */
+iframe#page-content-iframe
+{
+	width:  100%;
+	height: 100%;
+	
+	border: 0px solid black;
+	
+	border-collapse: collapse;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	-ms-box-sizing:     border-box;
+	box-sizing:         border-box;
+	
+	z-index: -1;
+	background:white;
+}
+
+/* The configurations for the content within the navigation panel.
+ * Pretty much the configurations for the navigation links.
+ */
+#nav-panel-content
+{
+	position: relative;
+}
+
+/* The configurations for the error message displayed when a specific
+ * page could not be loaded into the page-content IFrame.
+ */
+#page-content-error
+{
+	display: none;
+}
+
+/* Currently unused...
+ * The configurations for the hidden IFrame that is used for hiding the
+ * uploading of files. Pretty much its just a hack so you don't have to
+ * refresh the page any time you want to upload files.
+ */
+iframe#hiddenIframe
+{
+	display: none;
+	
+	width:   0;
+	height:  0;
+	
+	border:  0px solid white;
+}
+
+/* The configurations for the text-label on the post entry page.
+ */
+p#text-label
+{
+	display: inline;
+}
+
+/* The configurations for the upload-label on the post entry page.
+ */
+p#upload-label
+{
+	display: inline;
+}

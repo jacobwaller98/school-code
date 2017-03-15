@@ -1,0 +1,98 @@
+
+<!--
+ * File:		index.html
+ * Author:		Braden Steffaniak
+ * Date:		Oct 8 2013
+ * Modified:    JMeinzen Feb, 2015
+ * Description:	This is the main page form the Interactive Display Board
+ * 		Project for EHS. This page determines how the main page will
+ * 		be displayed.
+-->
+<!doctype html> <!-- Use the html5 doctype as well as the english language -->
+<html lang="en">
+	<head>
+		<!-- Use the UTF 8-bit encoding for the characters displayed within the page. -->
+		<meta charset="utf-8">
+
+		<!-- The title for the main page of the web-site. -->
+		<title>EHS Tiger Electronic Display</title>
+
+		<!-- Reference all of the cascading style sheets (.css) used within the page. -->
+	<link rel="stylesheet" type="text/css" href="WebContent/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="WebContent/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="WebContent/css/index.css" />
+	<style type="text/css">
+	body {
+	background-image: url();
+	background-repeat: repeat-x;
+	}
+	body,td,th {
+	font-size: larger;
+	color: #FFFFFF;
+	}
+	</style>
+
+		<!-- Reference all of the Javascript files (.js) used within the page. -->
+	<script type="text/javascript" src="WebContent/js/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="WebContent/js/functions.js"></script>
+	<script type="text/javascript" src="WebContent/js/index.js"></script>
+	<!--The following script tag downloads a font from the Adobe Edge Web Fonts server-->
+	<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+	</head>
+
+	<!-- The content of the main page. -->
+	<body id="index">
+		<!-- Divider that holds all of the page's content. Surround it with a border -->
+
+	   <div id="page-panel" class="border-config">
+			<!-- Set up the navigation panel that holds important links for the web page. -->
+		 <div id="nav-panel" class="border-config visible">
+				<!-- Set up the links within the navigation panel. -->
+		  <div id="nav-panel-content">
+			  <hr>
+              <header>
+  <div class="profileLogo">
+    <!-- Profile logo. Add a img tag in place of <span>. -->
+    <p class="logoPlaceholder"><!-- <img src="logoImage.png" alt="sample logo"> --></p>
+  </div>
+  <div class="profilePhoto">
+    <!-- Profile photo -->
+     </div>
+  <!-- Identity details -->
+  <section class="profileHeader">
+    <h1>Meet T.E.D.</h1>
+    <h3>Tiger Electronic Display</h3>
+    <hr>
+    <p>&nbsp;</p>
+    <h5>TED is a touchscreen interactive computer system designed by EHS students over several years and represents the start of a program that will be expanded by future EHS students.</h5>
+  </section>
+  <a class="content-panel-link nav-link navButton" href="http://www.ecusd7.org/">District 7</a><br><br>
+              <a class="content-panel-link nav-link navButton" href="http://www.ecusd7.org/ehs">Edwardsville High School</a><br><br>
+
+              <a class="content-panel-link nav-link navButton" href="http://www.ecusd7.org/homepages/ehsstaff/mathDepartment/">EHS Math Department</a><br><br>
+
+              <a class="content-panel-link nav-link navButton" href="WebContent/resources/assembleTED.html">TED Assembly Images</a><br><br>
+
+              <a class="content-panel-link nav-link navButton" href="2014-15/GoogleMapsTest.html">Google Maps - J. Waller 3Feb15</a><br><br>
+
+              <a class="content-panel-link nav-link navButton" href="2014-15/NewTicTacToe.html">Tic Tac Toe - C. Fuesting 10Feb15</a><br> <br>
+
+             <a class="content-panel-link nav-link navButton" href="2014-15/breakout.html">Break Out - D. Auten 5May15</a>  <br>  <br>
+             <a class="content-panel-link nav-link navButton" href="2014-15/gravity.html">Gravity - D. Peterson 7May15</a>  <br>  <br>
+             <a class="content-panel-link nav-link navButton" href="2014-15/twoPersonPong.html">Pong - D. Auten 19May15</a>  <br>  <br>
+  <!-- Links to Social network accounts --></header>
+	    </div><!-- id="nav-panel"-->
+
+		<!-- Set up the panel that will hold the main content on the page. -->
+		<div>
+            <iframe id="page-content-iframe" src="http://www.ecusd7.org/ehs/" sandbox="allow-scripts"  seamless>
+                    <!-- If IFrames are not supported, then display a message saying so. -->
+                  <p>Your browser does not support iFrames.</p>
+            </iframe>
+				<!-- Set up the error message element in case it is ever used. -->
+			<p id="page-content-error"></p>
+			<!-- Set up the IFrame used to display the main content. -->
+        </div>   <!-- id="page-content" -->
+      </div>  <!-- id="page-panel" -->
+	</body>
+</html>
