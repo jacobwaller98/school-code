@@ -15,7 +15,6 @@ public class CheckersGame {
 	
 	public CheckersGame() {
 		checkersBoard = new Board();
-		
 	}
 
 }
