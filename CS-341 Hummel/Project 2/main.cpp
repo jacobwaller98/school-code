@@ -78,7 +78,7 @@ int main() {
 
   cout << ">>Answered:" << endl;
   for(auto& s : allSessions) {
-    cout << "  \"" << s.getName() << "\": " << 100.0*(s.getNumAnswers() /((float)s.getNumQuestions() * s.getNumClickers())) << "% (";
+    cout << "  \"" << s.getName() << "\": " << 100.0*(s.getNumAnswers() /((double)s.getNumQuestions() * s.getNumClickers())) << "% (";
     cout << s.getNumQuestions() << " questions, " << s.getNumClickers();
     cout << " clickers, " << s.getNumAnswers() << " answers)" << endl;
   }
