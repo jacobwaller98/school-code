@@ -1,4 +1,0 @@
-jQueryGallery
-=============
-
-jQuery Image Gallery
